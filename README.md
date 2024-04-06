@@ -1,4 +1,5 @@
 # TeaMachineControlBoard
+![Tea Machine](imagesAndVideos/teaMachine.png)
 
 The main goal of the whole project was to design a working control board for a
 tea express, implement and test the system. The Kicad program was used to design it.
@@ -14,10 +15,19 @@ thermal tests were conducted using a thermal imaging camera.
 ## Schematics
 
 The design incorporates an RP Pico in a devkit form, three I2C PCF8575 expanders, and a step-down converter from 12V to 5V based on the XL4015. An alternative solution for potential issues is the LM7805, designated as 'do not populate'. The conversion from 12V to 3.3V is achieved using an NCP1117. The project features universal input-output blocks with adjustable logic voltage, RGB strip control, and six 12V switching outputs.
+![Schematic view 1](imagesAndVideos/schematic1.png)
+![Schematic view 2](imagesAndVideos/schematic2.png)
+![Schematic view 3](imagesAndVideos/schematic3.png)
+![Schematic view 4](imagesAndVideos/schematic4.png)
+![Schematic view 5](imagesAndVideos/schematic5.png)
 
 ## PCB Details
 
 The PCB is a four-layer board that has been ordered and manufactured through JLCPCB.
+![Board view 1](imagesAndVideos/board1.png)
+![Board view 2](imagesAndVideos/board2.png)
+![Board view 3](imagesAndVideos/board3.png)
+![Board view 4](imagesAndVideos/board4.png)
 
 ## Assembly
 
@@ -79,4 +89,5 @@ After SMT and THT assembly and initial board startup, the board was tested in it
 
 A test program was developed to configure all RPI Pico pins (excluding I2C communication pins) as outputs, executing various output sequences. This setup, combined with installed LEDs, allowed for verifying the operation of each output. Similarly, all signals on the PCF8575 expanders were set as outputs and temporarily pulled to ground level. The program, written in the Arduino IDE, successfully demonstrated the board's functionality through sequential activation and deactivation of outputs and LEDs, confirming the successful operation and stability of the system under test conditions.
 
-
+![Tea Machine Control Board Closeup](imagesAndVideos/teaMachine_ctrlBoard_closeup.png)
+![Tea Machine Photo](imagesAndVideos/teaMachine_photo.png)
