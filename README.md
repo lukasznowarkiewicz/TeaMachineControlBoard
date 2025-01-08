@@ -1,7 +1,7 @@
 # TeaMachineControlBoard
 ![Tea Machine](imagesAndVideos/teaMachine.png)
 
-The main goal of the whole project was to design a working control board for a
+This project was developed as part of my bachelor's thesis.  The main goal of the whole project was to design a working control board for a
 tea express, implement and test the system. The Kicad program was used to design it.
 The PCB board is four-layered, made of FR-4 laminate. It contains components
 made in both surface mount technology (SMT) and through-hole technology (THT).
